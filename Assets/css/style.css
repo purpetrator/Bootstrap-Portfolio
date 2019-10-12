@@ -1,0 +1,240 @@
+body {
+  background-image: url("../../Assets/images/pink_rice.png");
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  color: #4a5759;
+  width: 100%;
+}
+
+a:hover {
+  color: pink;
+}
+
+header {
+  font-family: "Georgia", Times, Times New Roman, serif;
+  font-size: 20pt;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.content {
+  background-color: #f6f1d1;
+  padding: 20px;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e49ab0;
+}
+
+.nav-stuff {
+  display: flex;
+  width: 960px;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #4a5759;
+  background-color: #b7d5d4;
+  font-weight: bold;
+  font-family: "Georgia", Times, Times New Roman, serif;
+  font-size: 30pt;
+  padding: 12px;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  font-size: 16pt;
+}
+
+.nav-items li {
+  margin: 0 12px;
+}
+
+#photo {
+  width: 20%;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.paragraph p {
+  line-height: 32px;
+}
+
+input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  border: 1px solid lightslategray;
+  border-radius: 4px;
+}
+
+button {
+  color: white;
+  font-size: 14pt;
+  background-color: #e49ab0;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#msg {
+  height: 150px;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid lightslategray;
+  border-radius: 4px;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #b7d5d4;
+  color: #4a5759;
+  text-align: center;
+  border-top: 8px solid #e49ab0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  margin: 1rem;
+  height: 40px;
+  /* I have no idea what this next line does, but I found it on a forum and it works */
+  width: -webkit-fill-available;
+  background-color: #e49ab0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-block {
+  position: relative;
+  padding: 1rem;
+  /* width: 45%; */
+}
+
+.image-block img {
+  width: 100%;
+}
+
+.space {
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+}
+
+.column img {
+  margin-top: 4px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* This starts the media queries */
+
+@media screen and (max-width: 980px) {
+ 
+  .container {
+    width: 70%;
+    margin: 40px auto;
+  }
+
+  .navbar {
+    width: auto;
+  }
+
+  .nav-stuff {
+    width: auto;
+  }
+  
+  .nav-items li {
+  width: 70%;
+  }
+
+  .header {
+  position: static;
+  }
+
+@media screen and (max-width: 768px) {
+ 
+  .container {
+    width: 92%;
+    margin: 20px auto;
+  }
+  .header {
+    position: static;
+    }
+ 
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .header {
+    position: static;
+  }
+
+  #photo {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+.logo {
+  width: 100%;
+ }
+
+.nav-stuff {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-items {
+  margin: 20px 40px;
+}
+
+.column {
+  flex: 100%;
+  max-width: 100%;
+}
